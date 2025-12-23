@@ -26,7 +26,7 @@ export function SidebarNotification() {
         
         <div className="pr-6">
           <h3 className="flex items-center gap-3 font-semibold text-neutral-900 dark:text-neutral-100 mb-2 mt-1">
-            <Logo size={42} className="-mt-1" />
+            <Logo  className="-mt-1" />
             <div>
               Welcome to{" "}
               <a 

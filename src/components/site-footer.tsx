@@ -11,16 +11,16 @@ export function SiteFooter() {
             <Heart className="h-4 w-4 fill-red-500 text-red-500" />
             <span>by</span>
             <Link
-              href="https://shadcnstore.com"
+              href="https://github.com/Kr1m0000"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-foreground hover:text-primary transition-colors"
             >
-              ShadcnStore Team
+              kr1m0000
             </Link>
           </div>
           <p className="text-xs text-muted-foreground">
-            Building beautiful, accessible blocks, templates and dashboards for modern web applications.
+            fake it till you make it
           </p>
         </div>
       </div>

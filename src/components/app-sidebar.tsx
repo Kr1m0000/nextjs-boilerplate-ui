@@ -34,8 +34,8 @@ import {
 
 const data = {
   user: {
-    name: "ShadcnStore",
-    email: "store@example.com",
+    name: "Abd-Elkrim TIZA",
+    email: "kr1m0000@goofy.com",
     avatar: "",
   },
   navGroups: [
@@ -43,15 +43,15 @@ const data = {
       label: "Dashboards",
       items: [
         {
-          title: "Dashboard 1",
+          title: "Consumption",
           url: "/dashboard",
           icon: LayoutDashboard,
         },
-        {
-          title: "Dashboard 2",
-          url: "/dashboard-2",
-          icon: LayoutPanelLeft,
-        },
+        // {
+        //   title: "Dashboard 2",
+        //   url: "/dashboard-2",
+        //   icon: LayoutPanelLeft,
+        // },
       ],
     },
     {
@@ -87,82 +87,82 @@ const data = {
     {
       label: "Pages",
       items: [
-        {
-          title: "Landing",
-          url: "/landing",
-          target: "_blank",
-          icon: LayoutTemplate,
-        },
-        {
-          title: "Auth Pages",
-          url: "#",
-          icon: Shield,
-          items: [
-            {
-              title: "Sign In 1",
-              url: "/sign-in",
-            },
-            {
-              title: "Sign In 2",
-              url: "/sign-in-2",
-            },
-            {
-              title: "Sign In 3",
-              url: "/sign-in-3",
-            },
-            {
-              title: "Sign Up 1",
-              url: "/sign-up",
-            },
-            {
-              title: "Sign Up 2",
-              url: "/sign-up-2",
-            },
-            {
-              title: "Sign Up 3",
-              url: "/sign-up-3",
-            },
-            {
-              title: "Forgot Password 1",
-              url: "/forgot-password",
-            },
-            {
-              title: "Forgot Password 2",
-              url: "/forgot-password-2",
-            },
-            {
-              title: "Forgot Password 3",
-              url: "/forgot-password-3",
-            }
-          ],
-        },
-        {
-          title: "Errors",
-          url: "#",
-          icon: AlertTriangle,
-          items: [
-            {
-              title: "Unauthorized",
-              url: "/errors/unauthorized",
-            },
-            {
-              title: "Forbidden",
-              url: "/errors/forbidden",
-            },
-            {
-              title: "Not Found",
-              url: "/errors/not-found",
-            },
-            {
-              title: "Internal Server Error",
-              url: "/errors/internal-server-error",
-            },
-            {
-              title: "Under Maintenance",
-              url: "/errors/under-maintenance",
-            },
-          ],
-        },
+        // {
+        //   title: "Landing",
+        //   url: "/landing",
+        //   target: "_blank",
+        //   icon: LayoutTemplate,
+        // },
+        // {
+        //   title: "Auth Pages",
+        //   url: "#",
+        //   icon: Shield,
+        //   items: [
+        //     {
+        //       title: "Sign In 1",
+        //       url: "/sign-in",
+        //     },
+        //     {
+        //       title: "Sign In 2",
+        //       url: "/sign-in-2",
+        //     },
+        //     {
+        //       title: "Sign In 3",
+        //       url: "/sign-in-3",
+        //     },
+        //     {
+        //       title: "Sign Up 1",
+        //       url: "/sign-up",
+        //     },
+        //     {
+        //       title: "Sign Up 2",
+        //       url: "/sign-up-2",
+        //     },
+        //     {
+        //       title: "Sign Up 3",
+        //       url: "/sign-up-3",
+        //     },
+        //     {
+        //       title: "Forgot Password 1",
+        //       url: "/forgot-password",
+        //     },
+        //     {
+        //       title: "Forgot Password 2",
+        //       url: "/forgot-password-2",
+        //     },
+        //     {
+        //       title: "Forgot Password 3",
+        //       url: "/forgot-password-3",
+        //     }
+        //   ],
+        // },
+        // {
+        //   title: "Errors",
+        //   url: "#",
+        //   icon: AlertTriangle,
+        //   items: [
+        //     {
+        //       title: "Unauthorized",
+        //       url: "/errors/unauthorized",
+        //     },
+        //     {
+        //       title: "Forbidden",
+        //       url: "/errors/forbidden",
+        //     },
+        //     {
+        //       title: "Not Found",
+        //       url: "/errors/not-found",
+        //     },
+        //     {
+        //       title: "Internal Server Error",
+        //       url: "/errors/internal-server-error",
+        //     },
+        //     {
+        //       title: "Under Maintenance",
+        //       url: "/errors/under-maintenance",
+        //     },
+        //   ],
+        // },
         {
           title: "Settings",
           url: "#",
@@ -199,11 +199,11 @@ const data = {
           url: "/faqs",
           icon: HelpCircle,
         },
-        {
-          title: "Pricing",
-          url: "/pricing",
-          icon: CreditCard,
-        },
+        // {
+        //   title: "Pricing",
+        //   url: "/pricing",
+        //   icon: CreditCard,
+        // },
       ],
     },
   ],
@@ -218,11 +218,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             <SidebarMenuButton size="lg" asChild>
               <Link href="/dashboard">
                 <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                  <Logo size={24} className="text-current" />
+                  <Logo className="bg-white" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-medium">ShadcnStore</span>
-                  <span className="truncate text-xs">Admin Dashboard</span>
+                  <span className="truncate font-medium">Studio</span>
+                  <span className="truncate text-xs">Your cloud CAT Tool</span>
                 </div>
               </Link>
             </SidebarMenuButton>
@@ -235,7 +235,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         ))}
       </SidebarContent>
       <SidebarFooter>
-        <SidebarNotification />
+        {/* <SidebarNotification /> */}
         <NavUser user={data.user} />
       </SidebarFooter>
     </Sidebar>
